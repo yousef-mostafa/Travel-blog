@@ -239,3 +239,74 @@ top: 0;
 }
 
 /* end featured */
+
+/* start comment */
+/* box-shadow: 10px 10px 5px grey; */
+.comment .card{
+    border: 1px solid #e7e6e6;
+    margin: 20px;
+    height: 760px;
+    width: 942px;
+}
+
+.comment .card .avatar{
+    height: 45px;
+    width: 45px;
+    float: left;
+    margin-right: 15px;
+}
+
+.comment .card  .ad-info{
+    float: left;
+    font-size: 15px;
+    width: 92%;
+}
+
+.comment .card .padding{
+    padding: 0px 60px 0px 60px;
+}
+
+.comment .card .padding h3{
+    margin: 0px ;
+    font-family:'Trebuchet MS';
+    font-weight: normal;
+}
+
+.comment .card .padding .text{
+    margin-bottom: 0px;
+}
+
+.comment .card .padding .text:hover{
+    color: blue;
+}
+
+.comment .card .padding .text p{
+    margin: 0px;
+}
+
+.comment .card hr{
+    height: 80%;
+    color: #cccccc;
+}
+
+.comment .card .padding hr ~ p{
+    float: left;
+    width: 6%;
+    margin: 0;
+}
+
+.comment .card .padding .f-right{
+    width: 4%;
+    float: right;
+}
+
+.fa-comment-o:hover{
+    color: #2573da;
+}
+
+.fa-heart-o{
+    color: #e84a43;
+}
+
+
+/* end comment */
