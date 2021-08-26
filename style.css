@@ -83,6 +83,7 @@ top: 0;
 
 .navbar ul li a:hover {
     color: #194d91;
+    transition: .5s ease;
 }
 .navbar ul li .active{
     color: #194d91;
@@ -101,18 +102,22 @@ top: 0;
 
 .navbar .social-icon .fa-facebook:hover{
     color:#3b5998;
+    transition: .5s ease;
 }
 
 .navbar .social-icon .fa-instagram:hover{
     color:#db3f90;
+    transition: .5s ease;
 }
 
 .navbar .social-icon .fa-pinterest-p:hover{
     color:#bd081c;
+    transition: .5s ease;
 }
 
 .navbar .social-icon .fa-twitter:hover{
     color:#1da1f2;
+    transition: .5s ease;
 }
 
 /* end navbar */
@@ -183,6 +188,7 @@ top: 0;
 .section .a .button:hover{
     background-color: #2573da;
     color: white;
+    transition: .5s ease;
 }
 
 /* end section */
@@ -285,6 +291,7 @@ top: 0;
 
 .comment .card .padding .text:hover{
     color: blue;
+    transition: .5s ease;
 }
 
 .comment .card .padding .text p{
@@ -309,10 +316,12 @@ top: 0;
 
 .fa-comment-o:hover{
     color: #2573da;
+    transition: .5s ease;
 }
 
 .fa-heart-o{
     color: #e84a43;
+    transition: .5s ease;
 }
 
 /* end comment */
@@ -361,6 +370,7 @@ top: 0;
 
 .gallery .photo:hover .overlay{
     opacity: 65%;
+    transition: .5s ease;
 }
 
 .gallery .photo img{
@@ -502,18 +512,22 @@ top: 0;
 
 .footer .social-icon .fa-facebook:hover{
     color:#3b5998;
+    transition: .5s ease;
 }
 
 .footer .social-icon .fa-instagram:hover{
     color:#db3f90;
+    transition: .5s ease;
 }
 
 .footer .social-icon .fa-pinterest-p:hover{
     color:#bd081c;
+    transition: .5s ease;
 }
 
 .footer .social-icon .fa-twitter:hover{
     color:#1da1f2;
+    transition: .5s ease;
 }
 
 /* end footer */
