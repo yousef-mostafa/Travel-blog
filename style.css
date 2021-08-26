@@ -388,6 +388,26 @@ top: 0;
 
 /* start footer */
 
+.footer{
+    height: 400px;
+    background-color: #696969;
+}
 
+.footer .about {
+    float: left;
+    width: 70%;
+}
+
+.footer .e-mail{
+    float: left;
+    width: 30%;
+}
+
+.footer .about img{
+    float: left;
+    width: 50%;
+}
+
+.footer .about {}
 
 /* end footer */
