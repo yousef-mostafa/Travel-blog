@@ -531,3 +531,14 @@ top: 0;
 }
 
 /* end footer */
+
+.chat{
+    padding: 20px;
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    color: white;
+    background-color: #2573da;
+    cursor: pointer;
+    box-shadow: 1px 1px 6px 3px #818f94
+}
