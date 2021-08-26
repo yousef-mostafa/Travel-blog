@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0
 }
@@ -33,6 +37,7 @@ top: 0;
     float: left;
     width: 17%;
     border-bottom: 1px solid #a7a6a6;
+    border-radius: 2px;
 }
 
 .navbar .search:hover {
@@ -391,23 +396,124 @@ top: 0;
 .footer{
     height: 400px;
     background-color: #696969;
+    color: white;
+    padding: 45px;
 }
 
 .footer .about {
     float: left;
-    width: 70%;
-}
-
-.footer .e-mail{
-    float: left;
-    width: 30%;
+    width: 65%;
 }
 
 .footer .about img{
     float: left;
+    width: 25%;
+    height: 150px;
+    margin: 10px;
+    margin-right: 25px;
+}
+
+.footer .about h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+.footer .about p {
+    width: 90%;
+    font-weight: lighter;
+}
+
+.footer .about a{
+    color: white;
+}
+
+.footer .e-mail{
+    float: left;
+    width: 35%;
+    padding-left: 25px;
+}
+
+.footer .e-mail .head{
+    font-size: 22px;
+    margin: 20px 0 0 0;
+}
+
+.footer .e-mail p{
+    margin: 0 0 5px 0;
+}
+
+.footer .e-mail input[type=text]{
+    color: white;
+    background-color: #696969;
+    width: 85%;
+    height: 35px;
+    padding: 5px 15px;
+    margin: 5px 0 10px 0;
+    outline: #f2f2f2;
+    border: 1px solid #f2f2f2;
+}
+
+.footer .e-mail input[type=text]:hover , .footer .e-mail input[type=text]:focus{
+    border: 3px solid #f2f2f2;
+}
+
+.footer .e-mail input[type=submit]{
+    color: white;
+    background-color: #2573da;
+    width: 85%;
+    height: 35px;
+    border: 0;
+    border-radius: 2px;
+    font-size: 16px;
+    cursor:pointer;
+}
+
+.footer .e-mail input[type=submit]:hover{
+    background-color: #5e99e7;
+    transition: .5s ease;
+}
+
+.footer .copy-right{
+    margin: 100px 0 0 0;
+}
+
+.footer .copy-right p{
+    font-size: 12px;
+    float: left;
+    margin-top: 0;
     width: 50%;
 }
 
-.footer .about {}
+.footer img{
+    height: 15px;
+    float: left;
+}
+
+.footer .social-icon{
+    padding-left: 110px;
+    float: left;
+    width: 40%;
+}
+
+.footer .social-icon i{
+    padding-left: 15px;
+    color: white;
+}
+
+.footer .social-icon .fa-facebook:hover{
+    color:#3b5998;
+}
+
+.footer .social-icon .fa-instagram:hover{
+    color:#db3f90;
+}
+
+.footer .social-icon .fa-pinterest-p:hover{
+    color:#bd081c;
+}
+
+.footer .social-icon .fa-twitter:hover{
+    color:#1da1f2;
+}
 
 /* end footer */
