@@ -270,6 +270,7 @@ body{
     /* start section */
     .section p{
         width: auto;
+        display: none;
     }
     .section .section-flex .a{
         margin: auto;
