@@ -177,8 +177,6 @@ body{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    align-items: center;
-    align-content: center;
 } 
 
 .section p{
@@ -220,7 +218,7 @@ body{
 
 @media (max-width:600px) {
     .container{
-        width: 30em;
+        width: 30rem;
     }
     .navbar{
         height: 120px;
@@ -268,12 +266,13 @@ body{
     /* end opening */
 
     /* start section */
-    .section p{
-        width: auto;
-        display: none;
+    .section .section-flex{
+        justify-content: flex-start;
+        margin-left: 25px;
     }
-    .section .section-flex .a{
-        margin: auto;
+    .section p{
+        width: 300px;
+        margin: 20px 40px;
     }
     /* end section */
 
