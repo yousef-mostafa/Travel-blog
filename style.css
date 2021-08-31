@@ -175,9 +175,10 @@ body{
 
 .section .section-flex{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
 } 
 
 .section p{
@@ -267,10 +268,11 @@ body{
     /* end opening */
 
     /* start section */
-    .section .section-flex{
-        flex-direction: column;
-        align-items: center;
-        width: 2.2em;
+    .section p{
+        width: auto;
+    }
+    .section .section-flex .a{
+        margin: auto;
     }
     /* end section */
 
