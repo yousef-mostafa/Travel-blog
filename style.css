@@ -342,7 +342,7 @@ body{
     /* start featured */
     .featured{
         flex-direction: column;
-        height: 230px;
+        height: 240px;
         padding: 0;
     }
     .featured p:first-child{
@@ -351,10 +351,12 @@ body{
         text-align: center;
     }
     .featured .dash{display: none;}
+
     .featured .featured-flex{
         width: 87%;
         margin-left: 10%;
     }
+    .featured .b p{padding:15px;}
     /* end featured */
 
 }
