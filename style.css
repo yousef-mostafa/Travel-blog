@@ -1,6 +1,5 @@
 /* start global */
 
-
 *{
     box-sizing: border-box;
 }
@@ -17,8 +16,6 @@ body{
     width: 1000px;
     margin: auto;
 }
-
-.clearfix{clear: both}
 
 /* end global */
 
@@ -307,6 +304,7 @@ body{
     }
     .navbar .search{
         flex: content;
+        width: 100%;
     }
     .navbar .social-icon i{
         padding-left: 30px;
@@ -330,6 +328,7 @@ body{
     /* end opening */
 
     /* start section */
+    .section{height: auto;}
     .section .section-flex{
         justify-content: flex-start;
         margin-left: 25px;
@@ -339,6 +338,24 @@ body{
         margin: 20px 40px;
     }
     /* end section */
+
+    /* start featured */
+    .featured{
+        flex-direction: column;
+        height: 230px;
+        padding: 0;
+    }
+    .featured p:first-child{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .featured .dash{display: none;}
+    .featured .featured-flex{
+        width: 87%;
+        margin-left: 10%;
+    }
+    /* end featured */
 
 }
 /* end media screen */
