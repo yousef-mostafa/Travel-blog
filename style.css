@@ -282,8 +282,8 @@ body{
         width: 360px;
     }
     .navbar{
-        height: 120px;
-        padding-top: 20px ;
+        height: 90px;
+        padding-top: 15px ;
     }
     .nav-flex{
         justify-content: space-around;
@@ -295,7 +295,7 @@ body{
     }
     .navbar .search{
         order: 2;
-        margin-top: 20px;
+        margin-top: 15px;
     }
     .navbar .social-icon{
         padding-left: 0 ;
