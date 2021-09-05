@@ -436,11 +436,11 @@ body{
     /* end featured */
     /* start comments */
     .comment .card{
-        height: 420px;
-        width: 360px;
-        margin-left: 0;
+        height: 430px;
+        width: 350px;
+        margin-left: 5px;
     }
-    .comment .card .padding{padding: 0px 40px;}
+    .comment .card .padding{padding: 0px 35px;}
     .comment .card img{
         height: auto;
         width: inherit;
