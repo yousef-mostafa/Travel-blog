@@ -351,6 +351,221 @@ body{
 
 /* end comment */
 
+/* start social-bar */
+
+.social-bar {
+    height: 60px;
+    background-color: #1c60b8;
+    margin-top: 20px;
+    color: white;
+}
+
+.social-bar .social-flex{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.social-bar .social{
+    flex: 25%;
+    padding: 10px;
+    padding-top: 15px;
+}
+
+.social-bar .social i{
+    float: left;
+    color: white;
+    padding:5px 10px 0px 0px;
+}
+
+.social-bar .social a{
+    margin: 0px;
+    float:left;
+    padding-left: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+}
+
+/* end social-bar */
+
+/* start gallery */
+.gallery{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.gallery .photo{
+    position: relative;
+    height: 230px;
+    flex-grow: 25%;
+    width: 269px;
+}
+
+.gallery .photo:hover .overlay{
+    opacity: 65%;
+    transition: .5s ease;
+}
+
+.gallery .photo img{
+    height: 230px; ;
+    width: 269px;
+}
+
+.gallery .photo .overlay{
+    background-color: black;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: .5s ease;
+}
+
+.gallery .photo .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 19px;
+    width: 80%;
+}
+
+/* end gallery */
+
+/* start footer */
+
+.footer{
+    height: 400px;
+    background-color: #696969;
+    color: white;
+    padding: 45px;
+}
+
+.footer .about {
+    float: left;
+    width: 65%;
+}
+
+.footer .about img{
+    float: left;
+    width: 25%;
+    height: 150px;
+    margin: 10px;
+    margin-right: 25px;
+}
+
+.footer .about h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+.footer .about p {
+    width: 90%;
+    font-weight: lighter;
+}
+
+.footer .about a{
+    color: white;
+}
+
+.footer .e-mail{
+    float: left;
+    width: 35%;
+    padding-left: 25px;
+}
+
+.footer .e-mail .head{
+    font-size: 22px;
+    margin: 20px 0 0 0;
+}
+
+.footer .e-mail p{
+    margin: 0 0 5px 0;
+}
+
+.footer .e-mail input[type=text]{
+    color: white;
+    background-color: #696969;
+    width: 85%;
+    height: 35px;
+    padding: 5px 15px;
+    margin: 5px 0 10px 0;
+    outline: #f2f2f2;
+    border: 1px solid #f2f2f2;
+}
+
+.footer .e-mail input[type=text]:hover , .footer .e-mail input[type=text]:focus{
+    border: 3px solid #f2f2f2;
+}
+
+.footer .e-mail input[type=submit]{
+    color: white;
+    background-color: #2573da;
+    width: 85%;
+    height: 35px;
+    border: 0;
+    border-radius: 2px;
+    font-size: 16px;
+    cursor:pointer;
+}
+
+.footer .e-mail input[type=submit]:hover{
+    background-color: #5e99e7;
+    transition: .5s ease;
+}
+
+.footer .copy-right{
+    margin: 100px 0 0 0;
+}
+
+.footer .copy-right p{
+    font-size: 12px;
+    float: left;
+    margin-top: 0;
+    width: 50%;
+}
+
+.footer img{
+    height: 15px;
+    float: left;
+}
+
+.footer .social-icon{
+    padding-left: 110px;
+    float: left;
+    width: 40%;
+}
+
+.footer .social-icon i{
+    padding-left: 15px;
+    color: white;
+}
+
+.footer .social-icon .fa-facebook:hover{
+    color:#3b5998;
+    transition: .5s ease;
+}
+
+.footer .social-icon .fa-instagram:hover{
+    color:#db3f90;
+    transition: .5s ease;
+}
+
+.footer .social-icon .fa-pinterest-p:hover{
+    color:#bd081c;
+    transition: .5s ease;
+}
+
+.footer .social-icon .fa-twitter:hover{
+    color:#1da1f2;
+    transition: .5s ease;
+}
+
+/* end footer */
+/* --------------------------------------------------------------------------------------------------------------------------------------------*/
 /* start media screen */
 
 @media (max-width:600px) {
@@ -451,6 +666,21 @@ body{
     }
     .comment .card .padding .f-right{width: 15%;}
     /* end comments */
-
+    /*start social-bar */
+    .social-bar {height: 100px;}
+    .social-bar .social{flex: 50%}
+    .social-bar .social i{float: none;}
+    /* end social-bar */
+    /*start gallery */
+    .gallery .photo{
+        width: 50%;
+        height: 200px;
+    }
+    .gallery .photo img{
+        height: 200px;
+        width: 100%;
+    }
+    .gallery .photo .text{width: 85%;}
+    /*end gallery */
 }
 /* end media screen */
