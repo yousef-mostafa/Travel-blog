@@ -441,12 +441,16 @@ body{
     height: 400px;
     background-color: #696969;
     color: white;
-    padding: 45px;
+    padding-top: 45px;
+}
+
+.footer .footer-flex{
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .footer .about {
-    float: left;
-    width: 65%;
+    flex: 65%;
 }
 
 .footer .about img{
@@ -472,8 +476,7 @@ body{
 }
 
 .footer .e-mail{
-    float: left;
-    width: 35%;
+    flex: 35%;
     padding-left: 25px;
 }
 
@@ -489,7 +492,7 @@ body{
 .footer .e-mail input[type=text]{
     color: white;
     background-color: #696969;
-    width: 85%;
+    width: 90%;
     height: 35px;
     padding: 5px 15px;
     margin: 5px 0 10px 0;
@@ -504,7 +507,7 @@ body{
 .footer .e-mail input[type=submit]{
     color: white;
     background-color: #2573da;
-    width: 85%;
+    width: 90%;
     height: 35px;
     border: 0;
     border-radius: 2px;
@@ -519,24 +522,27 @@ body{
 
 .footer .copy-right{
     margin: 100px 0 0 0;
+    flex: 100%;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .footer .copy-right p{
     font-size: 12px;
-    float: left;
     margin-top: 0;
-    width: 50%;
+    flex: 40%;
 }
 
+.footer .a{
+    flex: 10%;
+}
 .footer img{
     height: 15px;
-    float: left;
 }
 
 .footer .social-icon{
-    padding-left: 110px;
-    float: left;
-    width: 40%;
+    padding-left: 15%;
+    flex: 40%;
 }
 
 .footer .social-icon i{
@@ -565,12 +571,25 @@ body{
 }
 
 /* end footer */
+
+.chat{
+    padding: 16px;
+    position: fixed;
+    bottom: 4%;
+    right: 1.5%;
+    color: white;
+    background-color: #2573da;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px 0px hsla(0,1.4%,71%,.5);
+    border-radius: 2px;
+}
+
 /* --------------------------------------------------------------------------------------------------------------------------------------------*/
 /* start media screen */
 
 @media (max-width:600px) {
     .container{
-        width: 360px;
+        width: 355px;
     }
     .navbar{
         height: 90px;
@@ -622,7 +641,7 @@ body{
     .section{height: auto;}
     .section .section-flex{
         justify-content: flex-start;
-        margin-left: 25px;
+        margin-left: 6%;
     }
     .section p{
         width: 300px;
@@ -649,16 +668,17 @@ body{
     }
     .featured .b{padding:15px;}
     /* end featured */
+
     /* start comments */
     .comment .card{
         height: 430px;
         width: 350px;
-        margin-left: 5px;
+        margin-left: 1%;
     }
     .comment .card .padding{padding: 0px 35px;}
     .comment .card img{
         height: auto;
-        width: inherit;
+        width: 349px;
     }
     .comment .card .padding .text span{display: none;}
     .comment .card .padding hr ~ p{
@@ -666,11 +686,13 @@ body{
     }
     .comment .card .padding .f-right{width: 15%;}
     /* end comments */
+
     /*start social-bar */
     .social-bar {height: 100px;}
     .social-bar .social{flex: 50%}
     .social-bar .social i{float: none;}
     /* end social-bar */
+
     /*start gallery */
     .gallery .photo{
         width: 50%;
@@ -682,5 +704,51 @@ body{
     }
     .gallery .photo .text{width: 85%;}
     /*end gallery */
+
+    /* start footer */
+    .footer{
+        height:800px;
+    }
+    .footer .footer-flex{
+        flex-direction: column;
+    }
+    .footer .about{
+        display: flex;
+        flex-flow: column wrap;
+        padding-left: 20px;
+    }
+    .footer .about img{
+        float: none;
+        width: 40%;
+        order: 2;
+        margin: 0;
+    }
+    .footer .about h2{
+        order: 1;
+        margin-top: 0;
+    }
+    .footer .about p , .footer .about a{order: 3;}
+    .footer .e-mail{padding-left: 20px;}
+    .footer .copy-right{
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    .footer .copy-right .arrow{
+        order: 3;
+        padding-top: 40px;
+        padding-left: 45%;
+        width: 50%;
+    }
+    .footer .copy-right p{
+        width: 75%;
+        margin-bottom: 15px;
+    }
+    .footer .copy-right .social-icon{
+        padding-left: 0;
+    }
+    .footer .social-icon .fa-facebook{padding-left: 0;}
+    /* end footer */
+    .chat{border-radius: 50%;}
+    .chat i{font-size: x-large;}
 }
 /* end media screen */
