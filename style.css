@@ -757,9 +757,9 @@ body{
     }
     .footer .copy-right .arrow{
         order: 3;
-        padding-top: 40px;
-        padding-left: 45%;
         width: 50%;
+        margin-top: 40px;
+        margin-left: 45%;
     }
     .footer .copy-right p{
         width: 75%;
