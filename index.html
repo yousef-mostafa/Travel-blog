@@ -11,7 +11,7 @@
 
     <body>
         <!-- start nav bar -->
-        <div class="navbar nav-flex">
+        <div class="navbar nav-flex" id="navbar">
             <div class="container nav-flex">
                 <div class="search">
                     <input type="text" name="search" placeholder="Search..."> 
@@ -31,13 +31,14 @@
                     <a href="#"><i class="fa fa-pinterest-p fa-lg" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
                 </div>
-                <i class="fa fa-bars bar" aria-hidden="true"></i>
+                <i class="fa fa-bars bar" id="icon1" aria-hidden="true" onclick="nav_responseve()"></i>
+                <i class="fa fa-caret-down bar" id="icon2" aria-hidden="true" onclick="nav_responseve()"></i>
             </div>
         </div>
         <!-- end nav bar -->
 
                 <!-- start opening -->
-                <div class="opening" id="#top">
+                <div class="opening " id="#top">
                     <div class="container opening-flex">
                         <div class="overlay">
                             <P>Travel Blog</P>
@@ -215,7 +216,7 @@
                 </div>
                 <div class="clearfix"></div>
                 <div class="copy-right">
-                    <p>&copy; 2021 by Going Places. Proudly created with <b>Yousef Mostafa</b></p>
+                    <p>&copy; 2021 by Going Places. Proudly created with <b>Yousef Mostafa</b> from Wix.com</p>
                     <a href="#top" class="arrow"><img src="arrow.png"></a>
                     <div class="social-icon">
                         <a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
@@ -228,6 +229,21 @@
         </div>
         <!-- end footer -->
         <i class="fa fa-commenting-o fa-2x chat" aria-hidden="true"></i>
+        <script>
+            function nav_responseve(){
+                let x = document.getElementById("navbar");
+                if (x.className === "navbar nav-flex" ){
+                    x.className += " nav-responseve";
+                    document.getElementById("icon1").style.display = "none";
+                    document.getElementById("icon2").style.display = "block";
+                }
+                else{
+                    x.className = "navbar nav-flex";
+                    document.getElementById("icon2").style.display = "none";
+                    document.getElementById("icon1").style.display = "block";
+                }
+            }
+        </script>
     </body>
 </html>
 

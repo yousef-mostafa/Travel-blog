@@ -626,6 +626,28 @@ body{
         display: block;
         order: 1;
     }
+    .navbar .fa-caret-down{display: none;}
+    /*nav responseve */
+    .nav-responseve{
+        position: relative;
+        height: 275px;
+    }
+    .navbar-responseve .fa-bars{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .nav-responseve ul{
+        display: block;
+        order: 3;
+        width: 100%;
+        padding-left: 35%;
+        padding-top: 10px;
+    }
+    .navbar ul li {
+        float: none;
+        padding: 5px;
+    }
     /* end navbar */
 
     /* start opening */
